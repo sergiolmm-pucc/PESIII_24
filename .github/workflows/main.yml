@@ -16,3 +16,8 @@ jobs:
       - name: Ver ip da maquina
         run: ifconfig
         
+      - name: Verifica se tem python instalado
+        run: python --version
+      - name: Verifica se tem python3 instalado
+        run: python3 --version
+        
