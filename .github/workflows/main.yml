@@ -11,4 +11,8 @@ jobs:
 
       - name: demo para aula 
         run: echo Exemplo de um git action
+      - name: lista diretorio
+        run: ls -la
+      - name: Ver ip da maquina
+        run: ifconfig
         
