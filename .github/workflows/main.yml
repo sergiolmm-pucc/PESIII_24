@@ -20,4 +20,10 @@ jobs:
         run: python --version
       - name: Verifica se tem python3 instalado
         run: python3 --version
+
+      - name: Instalando Node
+        run:  actions/setup-node@v1
+
+      - name: Verifica se Node instalou corretament
+        run: node -v 
         
