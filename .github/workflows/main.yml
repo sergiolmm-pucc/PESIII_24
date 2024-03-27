@@ -1,0 +1,14 @@
+name: aulaGit-PESII-2024
+
+on: push
+
+jobs:
+  build:
+    run-ons: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: demo para aula 
+        run: echo Exemplo de um git action
+        
