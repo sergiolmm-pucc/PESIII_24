@@ -27,3 +27,8 @@ jobs:
       - name: Verifica se Node instalou corretament
         run: node -v 
         
+      - name: Instalando o express
+        run: npm install express 
+
+      - name: lista diretorio
+        run: ls -la
