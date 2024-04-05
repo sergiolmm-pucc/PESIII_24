@@ -24,6 +24,9 @@ jobs:
       - name: Instalando Node
         uses: actions/setup-node@v1
 
+      
+        
+
       - name: Verifica se Node instalou corretament
         run: node -v 
         
@@ -32,3 +35,10 @@ jobs:
 
       - name: lista diretorio
         run: ls -la
+
+
+      - name: Enviando
+        uses: kanadgupta/glitch-sync@main
+        with:
+          auth-token: '${{ secrets.authToken }}'
+          project-id: '${{ secrets.projectId }}'
