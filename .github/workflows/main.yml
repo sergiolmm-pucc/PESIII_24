@@ -38,9 +38,8 @@ jobs:
       - name: lista diretorio2        
         run: echo '${{ secrets.AUTHTOKEN }}'
 
-
-      - name: Enviando
-        uses: kanadgupta/glitch-sync@main
-        with:
-          auth-token: '${{ secrets.AUTHTOKEN }}'
-          project-id: '${{ secrets.projectId }}'
+      - name: Enviando para o glitch
+           uses: kanadgupta/glitch-sync@main
+           with:
+             auth-token: '${{ secrets.authToken }}'
+             project-id: '${{ secrets.projectId }}' 
