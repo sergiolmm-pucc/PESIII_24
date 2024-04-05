@@ -35,10 +35,12 @@ jobs:
 
       - name: lista diretorio
         run: ls -la
+      - name: lista diretorio2        
+        run: echo '${{ secrets.AUTHTOKEN }}'
 
 
       - name: Enviando
         uses: kanadgupta/glitch-sync@main
         with:
-          auth-token: '${{ secrets.authToken }}'
+          auth-token: '${{ secrets.AUTHTOKEN }}'
           project-id: '${{ secrets.projectId }}'
